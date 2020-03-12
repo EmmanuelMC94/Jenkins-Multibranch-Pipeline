@@ -11,6 +11,7 @@ pipeline {
 			when { expression {EXECUTE}}
 			steps {
                                 sh 'echo "step Two"'
+				sh 'echo "Updating Second Stage"'
                         }
                 }
 		stage ('Three') {
